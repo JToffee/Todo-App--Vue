@@ -7,7 +7,7 @@ export default createStore ({
         todos:JSON.parse(localStorage.getItem('Todos')),
         filter: 'all',
         activeTodos: [],
-        viewMode: JSON.parse(localStorage.getItem('Mode')),
+        viewMode: 'dark',
     },
     getters: {
          getAllTodos: (state) => {
