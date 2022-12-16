@@ -13,6 +13,7 @@ export default createStore ({
          getAllTodos: (state) => {
             state.todos =JSON.parse(localStorage.getItem('Todos'))
           if(!state.todos) state.todos = []
+          state.activeTodos = state.todos.filter(todo => todo.checked === null);
 
             return state.todos
          },
@@ -30,8 +31,6 @@ export default createStore ({
          },
 
         getCount(state){
-
-            if (state.activeTodos.length === 0) state.activeTodos = state.todos?.filter(todo => todo.checked === null);
 
             return state.activeTodos.length
             
