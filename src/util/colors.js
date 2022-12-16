@@ -1,0 +1,24 @@
+export const colors = {
+//primary
+primaryBlue: "hsl(220, 98%, 61%)",
+primaryBackground: "linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%)",
+
+// Neutral
+
+// Light Theme
+lightGray: "hsl(0, 0%, 98%)",
+lightGrayishBlue100: "hsl(236, 33%, 92%)",
+lightGrayishBlue200: "hsl(233, 11%, 84%)",
+darkGrayishBlue400: "hsl(236, 9%, 61%)",
+darkGrayishBlue500: "hsl(235, 19%, 35%)",
+
+// Dark Theme
+darkBlue: "hsl(235, 21%, 11%)",
+darkDesaturatedBlue: "hsl(235, 24%, 19%)",
+lightGrayishBlue300: "hsl(234, 39%, 85%)",
+lightGrayishBlueHover: "hsl(236, 33%, 92%)",
+darkGrayishBlue600: "hsl(234, 11%, 52%)",
+darkGrayishBlue700: "hsl(233, 14%, 35%)",
+darkGrayishBlue800: "hsl(237, 14%, 26%)",
+
+}
