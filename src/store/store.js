@@ -45,6 +45,8 @@ export default createStore ({
 
             state.todos =JSON.parse(localStorage.getItem('Todos'))
 
+            if(!state.todos) state.todos = []
+
             const newTodo = new Todo(todo)
             
             state.todos?.push(newTodo)
