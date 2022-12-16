@@ -31,7 +31,7 @@ export default createStore ({
 
         getCount(state){
 
-            if (state.activeTodos.length === 0) state.activeTodos = state.todos.filter(todo => todo.checked === null);
+            if (state.activeTodos.length === 0) state.activeTodos = state.todos?.filter(todo => todo.checked === null);
 
             return state.activeTodos.length
             
@@ -47,7 +47,7 @@ export default createStore ({
 
             const newTodo = new Todo(todo)
             
-            state.todos.push(newTodo)
+            state.todos?.push(newTodo)
 
             state.activeTodos.push(todo)
 
