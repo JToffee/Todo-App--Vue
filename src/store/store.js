@@ -12,7 +12,7 @@ export default createStore ({
     getters: {
          getAllTodos: (state) => {
             state.todos =JSON.parse(localStorage.getItem('Todos'))
-            state.todos = JSON.parse(localStorage.getItem('Todos'));
+          if(!state.todos) state.todos = []
 
             return state.todos
          },
@@ -45,13 +45,13 @@ export default createStore ({
 
             state.todos =JSON.parse(localStorage.getItem('Todos'))
 
-            if(!state.todos) state.todos = []
+            if(!state.todos) state.todos = [];
 
-            const newTodo = new Todo(todo)
+            const newTodo = new Todo(todo);
             
-            state.todos?.push(newTodo)
+            state.todos.push(newTodo);
 
-            state.activeTodos.push(todo)
+            state.activeTodos.push(todo);
 
             localStorage.setItem('Todos', JSON.stringify(state.todos));
         
