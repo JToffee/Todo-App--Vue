@@ -47,8 +47,10 @@ export default createStore ({
 
             if(!state.todos) state.todos = [];
 
+
             const newTodo = new Todo(todo);
             
+            console.log(state.todos)
             state.todos.push(newTodo);
 
             state.activeTodos.push(todo);
