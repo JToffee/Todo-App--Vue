@@ -36,6 +36,8 @@ export default createStore ({
             
         },
         getViewMode (state){
+
+            state.viewMode = JSON.parse(localStorage.getItem('Mode'))
             return state.viewMode
         }
     },
@@ -122,7 +124,6 @@ export default createStore ({
         },
         setViewMode(state){
 
-            console.log(state.viewMode)
         if(state.viewMode === 'light') {
             localStorage.setItem('Mode',JSON.stringify('dark'))
             state.viewMode = 'dark'
