@@ -31,9 +31,9 @@ export default createStore ({
 
         getCount(state){
 
-            if (state.activeTodos?.length === 0) state.activeTodos = state.todos?.filter(todo => todo.checked === null);
+            if (state.activeTodos.length === 0) state.activeTodos = state.todos?.filter(todo => todo.checked === null);
 
-            return state.activeTodos?.length
+            return state.activeTodos.length
             
         },
         getViewMode (state){
