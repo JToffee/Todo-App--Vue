@@ -50,10 +50,10 @@ export default createStore ({
 
             const newTodo = new Todo(todo);
             
-            console.log(state.todos)
+            
             state.todos.push(newTodo);
 
-            state.activeTodos.push(todo);
+            state.activeTodos.push(newTodo);
 
             localStorage.setItem('Todos', JSON.stringify(state.todos));
         

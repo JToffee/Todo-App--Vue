@@ -45,7 +45,6 @@
       setIconUrl() {},
       setViewMode() {
         this.$store.dispatch("setViewMode");
-        console.log("mode");
       },
     },
     created() {
