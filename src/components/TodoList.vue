@@ -109,7 +109,6 @@
     text-align: left;
     padding: 0 0 5px 0;
     text-indent: 10px;
-
     border-bottom: 1px solid var(--lightGrayishBlue200);
   }
 
@@ -138,6 +137,7 @@
     width: 20px;
     border-radius: 12px;
     background-color: transparent;
+    border: 1px solid var(--lightGrayishBlue200);
   }
   .check-custom:hover {
     border: 1px solid hsl(280, 87%, 65%);
@@ -149,12 +149,12 @@
     background: linear-gradient(to right, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
   }
   .check-label .check-custom:after {
-    left: 9px;
-    top: 5px;
+    left: 7px;
+    top: 4px;
     width: 3px;
     height: 7px;
     border: solid white;
-    border-width: 0 3px 3px 0;
+    border-width: 0 2px 2px 0;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);

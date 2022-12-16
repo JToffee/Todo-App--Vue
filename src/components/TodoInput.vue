@@ -68,7 +68,8 @@
     width: 20px;
     height: 20px;
     border-radius: 12px;
-    border: 0.5px solid var(--darkGrayishBlue800);
+    border: 1px solid var(--lightGrayishBlue200);
+
     margin-left: 15px;
   }
 
